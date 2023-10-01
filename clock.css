@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head{
+    position: relative;
+}
+.main img{
+    margin: auto;
+    margin-left: 380px;
+}
+.needle-min {
+    height: 149px;
+    width: 7px;
+    background-color: brown;
+    position:absolute;
+    top: 76px;
+    left:604px;
+    transform-origin: bottom left;
+}
+
+.needle-sec {
+    height: 4px;
+    width: 158px;
+    background-color: #ea1d1d;
+    top: 223px;
+    left: 605px;
+    position: absolute;
+    rotate: 309deg;
+    transform-origin: bottom left;
+}
+
+
+.needle-hr {
+    height: 114px;
+    width: 7px;
+    background-color: black;
+    position: relative;
+    top: -342px; 
+    left:606px;
+    transform-origin: bottom left;
+
+}
+

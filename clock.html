@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnalogClock</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+
+<body>
+    <div class="head">
+        <div class="main">
+            <img src="29c08531-891f-465b-957a-fc1b57e373a1.jpg" alt="">
+            <div class="needle-hr" id="hr"></div>
+            <div class="needle-min" id="min"></div>
+            <div class="needle-sec" id="sec"></div>
+        </div>
+    </div>
+    <script>
+
+        setInterval(() => {
+
+            const day = new Date();
+            const hh = day.getHours();
+            const mm = day.getMinutes();
+            const ss = day.getSeconds();
+            const hour = 30 * hh + mm / 2;
+            const minute = 6 * mm;
+            const second = 6 * ss;
+
+            hr.style.transform = `rotate(${hour}deg)`
+            min.style.transform = `rotate(${minute}deg)`
+            sec.style.transform = `rotate(${second}deg)`
+        })
+
+    </script>
+</body>
+
+</html>
+
+
+
